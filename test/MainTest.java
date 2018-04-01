@@ -7,7 +7,8 @@ import source.FlowArray.SingleTypeException;
 public class MainTest {
 
 	public static void main(String[] args) throws InvalidTypeException, SingleTypeException {
-        FlowArray arr = new FlowArray(Integer.class);
+        FlowArray arr = new FlowArray();
+        arr.addType(Integer.class);
         arr.addType(String.class);
         arr.addType(Boolean.class);
         arr.append(true);

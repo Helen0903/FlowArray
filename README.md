@@ -7,4 +7,13 @@ https://helen0903.github.io/FlowArray/
 
 ------------
 ### _Disclaimer_
-The `.gitignore` automatically ignores any `.json` or `.project` files, as well as the `".vscode"` & `"bin"` directories from VSCode and Eclipse respectively.
+The `.gitignore` automatically ignores:
+
+IDE | Folders | File Types
+--- | ------- | ----------
+Visual Studio Code | `.vscode` | `.json`
+Eclipse | `bin` | `.project`, `.classpath`
+
+Please do not remove any file extensions from this when making any changes on your fork.
+
+If you add an IDE-specific file extension, please include it above. 

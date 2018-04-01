@@ -20,7 +20,7 @@ public class FlowArray {
 			Class<?>[] temp = new Class<?>[] {type};
 			types = typeMerge(types, temp);
 		} else {
-			if(type==null) {
+			if(this.type==null) {
 				this.type = type;
 				return true;
 			}
