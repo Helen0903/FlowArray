@@ -1,7 +1,7 @@
 package source;
 
 public class FlowArray {
-	public Class<?> type; public Class<?>[] types; boolean mul;
+	public Class<?> type = null; public Class<?>[] types = null; boolean mul;
 	Object[] array = new Object[0];
 	public FlowArray(Class<? extends Object> type) {
 		this.type = type;
@@ -20,8 +20,13 @@ public class FlowArray {
 			Class<?>[] temp = new Class<?>[] {type};
 			types = typeMerge(types, temp);
 		} else {
+			if(type==null) {
+				this.type = type;
+				return true;
+			}
 			mul = true;
 			types = new Class<?>[] {this.type, type};
+			this.type = null;
 		}
 		return true;
 	}
@@ -68,6 +73,12 @@ public class FlowArray {
 		Class<?>[] returner = new Class<?>[] {};
 		for(Class<?>[] x : total) {
 			returner = typeMerge(returner, x);
+		}
+		if(returner.length == 1) {
+			this.type = returner[0];
+			types = null;
+			mul = false;
+			return true;
 		}
 		types = returner;
 		return true;
@@ -243,4 +254,4 @@ public class FlowArray {
 	public class SingleTypeException extends Exception {
 		private static final long serialVersionUID = 1L;
 	}
-}
+} 

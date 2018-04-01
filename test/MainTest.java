@@ -14,6 +14,7 @@ public class MainTest {
         arr.append(3);
         arr.insert(1, "13");
         arr.removeType(String.class);
+        arr.removeType(Boolean.class);
         for(Class<?> x : arr.types) {
         	System.out.println(x);
         }
