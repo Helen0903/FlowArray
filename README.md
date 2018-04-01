@@ -4,3 +4,6 @@ An array class for Java which allows for multiple types of data in the array as 
 See the website for more:
 
 https://helen0903.github.io/FlowArray/
+
+------------
+The `.gitignore` automatically ignores any `.json` files, as well as the `".vscode"` directory.
