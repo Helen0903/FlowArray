@@ -7,4 +7,4 @@ https://helen0903.github.io/FlowArray/
 
 ------------
 ### _Disclaimer_
-The `.gitignore` automatically ignores any `.json` files, as well as the `".vscode"` directory.
+The `.gitignore` automatically ignores any `.json` or `.project` files, as well as the `".vscode"` & `"bin"` directories from VSCode and Eclipse respectively.
