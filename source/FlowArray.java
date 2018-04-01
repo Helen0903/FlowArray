@@ -15,6 +15,18 @@ public class FlowArray {
 		mul = true;
 	}
 
+	public FlowArray clone() {
+		FlowArray returner = this;
+		return returner;
+	}
+
+	public boolean clear() {
+		this.array = new Object[0];
+		return true;
+	}
+
+	
+
 	public boolean addType(Class<?> type) {
 		if(mul) {
 			Class<?>[] temp = new Class<?>[] {type};
