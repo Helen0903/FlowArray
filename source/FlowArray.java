@@ -1,4 +1,4 @@
-package arrays.flow;
+package source;
 
 public class FlowArray {
 	public Class<?> type; public Class<?>[] types; boolean mul;
