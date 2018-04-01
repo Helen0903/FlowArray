@@ -4,7 +4,7 @@ import source.FlowArray;
 import source.FlowArray.InvalidTypeException;
 import source.FlowArray.SingleTypeException;
 
-public class Main {
+public class MainTest {
 
 	public static void main(String[] args) throws InvalidTypeException, SingleTypeException {
         FlowArray arr = new FlowArray(Integer.class);
